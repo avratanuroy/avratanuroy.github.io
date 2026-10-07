@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Avratanu Roy</title>
+<meta name="description" content="Avratanu Roy, Ph.D. research scholar in Transportation Engineering at IIT Delhi. Game theory, mean field games and mathematical modelling for traffic safety.">
+<meta name="author" content="Avratanu Roy">
+<meta property="og:title" content="Research | Avratanu Roy">
+<meta property="og:description" content="Avratanu Roy, Ph.D. research scholar in Transportation Engineering at IIT Delhi. Game theory, mean field games and mathematical modelling for traffic safety.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%237a1f2e'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Georgia'%3EAR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Cantarell:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="research">
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Avratanu Roy</a>
+    <nav class="menu" aria-label="Main menu">
+      <a href="index.html" data-page="about">About</a>
+      <a href="research.html" data-page="research">Research</a>
+      <a href="publications.html" data-page="publications">Publications</a>
+      <a href="teaching.html" data-page="teaching">Teaching</a>
+      <a href="cv.html" data-page="cv">CV</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h1 class="page-title">Research</h1>
+
+<h2 class="sub-title">Combinatorial trajectory theory</h2>
+<p>I have formulated the enumeration of feasible road-user trajectories as a system of linear time-invariant
+  difference equations and obtained closed-form analytical solutions using the unilateral Z-transform, the inverse
+  Z-transform and matrix methods. The symbolic solutions were derived in SageMath and MATLAB and verified against
+  numerical simulation in Python. This work was presented orally at Traffic and Granular Flow 2024, Lyon, France.</p>
+
+<h2 class="sub-title">Lane-free representation of the conflict field</h2>
+<p>I have generalised this theory from lane-based roads to lane-free space through a density-adaptive Voronoi
+  tessellation and spectral graph analysis. I established a formal normalization identity linking the combinatorial
+  baseline to a Bayesian Dirichlet&ndash;Multinomial Markov model under the maximum-entropy principle, and built a
+  dynamic conflict-precursor detector on this representation.</p>
+
+<h2 class="sub-title">Game theory of right-of-way negotiation</h2>
+<p>I have formulated pairwise road-user encounters as non-cooperative games whose payoffs derive from a
+  parameter-free, kinematics-based danger index. I derived the mixed-strategy Nash equilibria analytically,
+  established their invariance to behavioural parameters, and quantified the efficiency loss of uncoordinated
+  interaction through the <span class="poa">price of anarchy</span>. A central finding is that this loss does not
+  follow conflict frequency and is greatest between fast and slow road-user classes, such as cars and pedestrians.</p>
+
+<h2 class="sub-title">Equilibrium-based intervention design</h2>
+<p>I have converted the <span class="poa">price of anarchy</span> into a design criterion. I derived an analytical
+  threshold for the strength of a priority rule required to eliminate the inefficient equilibrium, and developed a
+  closed-loop, multi-objective framework that ranks safety interventions by safety, throughput and residual
+  inefficiency.</p>
+
+<h2 class="sub-title">Research beyond the Ph.D. &middot; Mean field games</h2>
+<p><em>Ongoing, independent of the doctoral thesis.</em> I have formulated a heterogeneous-action-space mean field
+  game in which each road-user class has its own action space and the classes are coupled through an asymmetric
+  cross-class interaction matrix. I derived the coupled Hamilton&ndash;Jacobi&ndash;Bellman and Fokker&ndash;Planck
+  system and a Hopf&ndash;Cole reduction to a fixed point over positive eigenfunctions, extending the theory beyond its
+  standard monotone setting. The finite-element equilibrium solver is implemented in Python and calibrated on drone
+  trajectory data.</p>
+
+<h2 class="sub-title">Software</h2>
+<p>I have implemented the complete analytical pipeline of my doctoral research in Python, covering Voronoi
+  construction, Bayesian estimation, equilibrium computation, calibration, bootstrap uncertainty quantification and
+  conflict detection.</p>
+</main>
+
+<footer>Avratanu Roy &middot; Indian Institute of Technology Delhi</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
