@@ -69,17 +69,17 @@ h1, h2, h3 { text-wrap: balance; }
   margin: 30px 0 6px; line-height: 1.4;
 }
 p { margin: 0 0 14px; }
-
-.lead-figure { margin: 0 auto; max-width: 560px; }
-.lead-figure canvas {
-  display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;
-  border: 1px solid var(--rule); background: #fbfafa;
+/* Book-style justified text with hyphenation for even word spacing */
+main p, main li, .cv-entry .where, .skills dd {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
-.lead-figure figcaption { text-align: center; font-size: 0.9rem; color: var(--muted); font-style: italic; margin-top: 6px; }
 
-.intro { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 26px; align-items: start; }
+.intro { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 8px; }
 .intro.no-photo { grid-template-columns: minmax(0, 1fr); }
-.portrait { width: 160px; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--rule); }
+.portrait { display: block; width: 200px; max-width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--rule); }
 
 ul.tri { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
 ul.tri li { position: relative; padding-left: 20px; }
@@ -131,8 +131,8 @@ footer {
 @media (max-width: 640px) {
   .brand { font-size: 1.7rem; }
   .menu { gap: 2px 14px; }
-  .intro { grid-template-columns: 1fr; }
-  .portrait { width: 140px; }
+  .intro { grid-template-columns: 1fr; justify-items: center; }
+  .portrait { width: 170px; }
   .skills div, .cv-entry { grid-template-columns: 1fr; }
   .contact-row .k { width: auto; }
 }

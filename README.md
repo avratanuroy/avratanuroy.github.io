@@ -16,11 +16,11 @@ Live site: https://avratanuroy.github.io
 | `cv.html` | Curriculum vitae |
 | `contact.html` | Contact |
 | `assets/style.css` | Shared stylesheet |
-| `assets/main.js` | Menu highlight, copy buttons and the Voronoi figure on the About page |
+| `assets/main.js` | Menu highlight and copy buttons |
+| `assets/photo.jpg` | Portrait on the About page |
 
 The site is plain HTML and CSS with no build step. Edit a page and push to the `main` branch to update the live site.
 
-## Adding a photo
+## Changing the photo
 
-Save the photo as `assets/photo.jpg`, then in `index.html` uncomment the `<img class="portrait">` line and
-remove `no-photo` from the `<div class="intro no-photo">` line.
+Replace `assets/photo.jpg` with a portrait image (4:5 ratio, about 640 by 800 pixels).
